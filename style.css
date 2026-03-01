@@ -235,7 +235,7 @@ nav ul {
   overflow: hidden;
   border: 3px solid var(--secondary-color);
   padding: 5px;
-  background-color: #F6F3EF;
+  background-color: #efebe2;
 }
 
 .profile-img {
@@ -522,22 +522,9 @@ nav ul {
   box-shadow: 0 4px 15px rgba(44, 166, 164, 0.3);
 }
 
-.live-indicator {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--secondary-color);
-}
 
-.live-dot {
-  width: 8px;
-  height: 8px;
-  background: #00ff00;
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
+
+
 
 @keyframes pulse {
   0% { opacity: 1; }
@@ -975,54 +962,8 @@ footer {
   color: rgba(26, 26, 46, 0.7);
 }
 
-/* ===== WHATSAPP FLOTANTE ===== */
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 1000;
-}
 
-.whatsapp-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: #25D366;
-  color: white;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 1.8rem;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  transition: all 0.3s ease;
-  position: relative;
-}
 
-.whatsapp-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
-}
-
-.whatsapp-tooltip {
-  position: absolute;
-  right: 70px;
-  background: var(--dark-color);
-  color: white;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  white-space: nowrap;
-  opacity: 0;
-  transform: translateX(10px);
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
-
-.whatsapp-btn:hover .whatsapp-tooltip {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 /* ===== ANIMACIONES ===== */
 @keyframes fadeInUp {
@@ -1274,3 +1215,34 @@ img {
 .animated {
   animation: fadeInUp 0.6s ease-out;
 }
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  
+  border-radius:16px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  
+}
+
+.cta-button {
+  padding: 14px 30px;
+ font-size: 1rem;
+ display: inline-block;
+  margin-top: 20px;
+  
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+   transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--dark-color);
+}
+
+
